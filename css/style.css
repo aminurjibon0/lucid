@@ -1,0 +1,325 @@
+/*global start*/
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+.common-header {
+    margin-bottom: 60px;
+}
+.common-header .header-p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #008ed6;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.common-header .header-h1 {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 20px 0;
+}
+.common-header .header-border {
+    width: 20px;
+    height: 2px;
+    background-color: #008ed6;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.common-header .header-border::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #008ed6;
+    position: absolute;
+    right: -24px;
+    top: 0;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    color: #999999;
+}
+#features,
+#responsive,
+#customize,
+#testimonials,
+#download,
+#pricing,
+#contact {
+    padding: 60px 0;
+}
+/*global end*/
+/*header start
+****************************
+*/
+header {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+/*navbar start*/
+.custom-navbar {
+    margin-bottom: 40px;
+}
+.custom-navbar-nav {}
+.custom-navbar-nav li {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+}
+.custom-navbar-nav li a {
+    font-weight: 600;
+    color: #fffefe;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    position: relative;
+}
+.custom-navbar-nav li a::before {
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #008ed6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width .3s;
+}
+.custom-navbar-nav li a:hover::before {
+    width: 48%;
+}
+.custom-navbar-nav li a::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #008ed6;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width .3s;
+}
+.custom-navbar-nav li a:hover::after {
+    width: 48%;
+}
+.custom-navbar-nav li a:hover {
+    
+}
+/*navbar end*/
+/*banner start*/
+#banner {
+    padding: 30px 0;
+}
+.banner-content {
+    padding: 30px 0;
+}
+.banner-content p {
+    margin-bottom: 40px;
+}
+.banner-content .banner-p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #008ed6;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.banner-content h1 {
+    font-weight: 700;
+    color: #fff;
+    margin: 20px 0;
+}
+.banner {
+    position: relative;
+}
+.banner-img {
+    position: relative;
+}
+.banner-img-inner {
+    position: absolute;
+    bottom: -120px;
+    width: 80%;
+}
+/*banner end*/
+/*header end*/
+/*features start
+****************************
+*/
+#features i {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #ECECEC;
+    border-radius: 50%;
+    color: #008ed6;
+    text-align: center;
+    line-height: 2.5;
+    display: block;
+    margin: 0 auto 30px;
+}
+#features p {
+    word-spacing: 2px;
+}
+/*features end*/
+/*responsive start
+****************************
+*/
+#responsive .common-header .header-border {
+    left: 0;
+    margin: 0;
+}
+#responsive .custom-padding {
+    padding: 40px 0;
+}
+#responsive ul li {
+    color: #1b1b1b;
+}
+#responsive i {
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+/*responsive end*/
+/*customize start
+****************************
+*/
+#customize {
+    background-color: #F2F2F2;
+}
+#customize .common-header .header-border {
+    left: 0;
+    margin: 0;
+}
+/*customize end*/
+/*testimonials start
+****************************
+*/
+#testimonials {
+    background-image: url(../images/testimonials.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#testimonials h1 {
+    color: #fff;
+}
+#testimonials .name {
+    font-size: 14px;
+}
+/*testimonials end*/
+/*download start
+****************************
+*/
+#download {
+    background-color: #15141A;
+    padding: 40px;
+}
+#download h1 {
+    font-weight: 600;
+    color: #fff;
+}
+#download h1 span {
+    font-weight: 300;
+}
+/*download end*/
+/*pricing start
+****************************
+*/
+#pricing .price-type {
+    border-bottom: 2px solid #eeeeee;
+}
+#pricing .price {
+    border-bottom: 2px solid #eeeeee;
+}
+#priceing .price p span {
+    font-size: 48px;
+}
+#pricing .price h1 sup {
+    
+}
+#pricing .custom-card .price,
+#pricing .custom-card .price p,
+#pricing .custom-card .btn {
+    transition: all .4s;
+}
+#pricing .custom-card {
+    cursor: pointer;
+}
+#pricing .custom-card:hover .price {
+    background-color: #008ed6;
+    color: #fff;
+}
+#pricing .custom-card:hover .price p {
+    color: #fff;
+}
+#pricing .custom-card:hover .btn {
+    background-color: #008ed6;
+    color: #fff;
+}
+/*pricing end*/
+/*contact start
+****************************
+*/
+#contact {
+    background-color: #EDEDED;
+    padding-bottom: 0;
+}
+#contact i {
+    color: #008ed6;
+}
+.comments-form {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #15141A;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+    padding: 30px;
+}
+.comments-form input {
+    background-color: transparent;
+    border: 1px solid #444348;
+    margin-bottom: 22px;
+}
+.comments-form select {
+    color: #6c757d;
+    border: 1px solid #444348;
+    background: transparent;
+}
+.comments-form input:focus,
+.comments-form select:focus,
+.comments-form textarea:focus {
+    background-color: #c4c3c3;
+}
+.comments-form textarea {
+    background-color: #15141A;
+    border: 1px solid #444348;
+}
+/*contact end*/
+/*footer start
+****************************
+*/
+footer {
+    background-color: #15141A;
+    padding: 30px 0;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #444348;
+    padding: 0 5px;
+}
+footer ul li a i {
+    transition: all .3s;
+}
+footer ul li a i:hover {
+    color: #008ed6;
+}
+footer .copyright p {
+    color: #444348;
+}
+/*footer end*/
